@@ -172,6 +172,9 @@ function iniciar(){
   rutas.children[1].children[2].children[0].src = '../img/ruta-3.jpg';
   rutas.children[1].children[2].children[1].textContent = 'Ruta a Popayán';
   rutas.children[1].children[2].children[2].textContent = 'En Esta Ruta Podras Ver Paisajes Muy Bonitos Y Atardeceres';
+  presupto.children[1].children[0].children[1].textContent = '$30 Aproximado';
+  presupto.children[1].children[1].children[1].textContent = '$40 Aproximado';
+  presupto.children[1].children[2].children[1].textContent = '$30 Aproximado';
 // }
 
 // motposada.addEventListener('click', motero2)

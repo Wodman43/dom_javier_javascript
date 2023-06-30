@@ -63,7 +63,7 @@ section{
     display: flex;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .6s;
+    transition: opacity .6s;                      ;
 }
 
 .modal--show{
@@ -74,8 +74,8 @@ section{
 
 .modal-container{
     margin: auto;
-    width: 90%;
-    max-width: 600px;
+    width: 550px;
+    max-width: 550px;
     max-height: 90%;
     background-color: #fff;
     border-radius: 6px;
@@ -178,8 +178,8 @@ section{
 
 .modal-container-2{
     margin: auto;
-    width: 90%;
-    max-width: 600px;
+    width: 550px;
+    max-width: 550px;
     max-height: auto;
     background-color: #fff;
     border-radius: 6px;
