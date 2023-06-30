@@ -245,7 +245,7 @@ section{
 
 .heading{
     text-align: center;
-    background: var(--verde);
+    background: black;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -415,12 +415,12 @@ header label{
 
 .motoposadas .columna .content h3{
     font-size: 3rem;
-    color: #333;
+    color: black;
 }
 
 .motoposadas .columna .content p{
     font-size: 1.5rem;
-    color: #666;
+    color: #000000;
     padding: 1rem 0;
 }
 

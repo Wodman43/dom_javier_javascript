@@ -94,6 +94,8 @@ const imagen = document.querySelector('.columna');
 const nav = document.querySelector('.navbar');
 const nav2 = document.querySelector('.navbar2');
 const motoada = document.querySelector('.motoposadas');
+const rutas = document.querySelector('.detalles');
+const presupto = document.querySelector('.presupuesto');
 // const usu = 'adso2556678';
 // const contra = 'adso2023';
 
@@ -108,6 +110,8 @@ let rol3 = 'Bienvenido Administrador';
   let motposada = document.getElementById('mtoposada');
   let invitado = document.getElementById('invitado');
   let imagen2 = document.querySelector('.inicio');
+  let imagen3 = document.querySelector('.motoposadas');
+ 
   // let irse = document.getElementById('cerrarsesion');
  
   
@@ -131,14 +135,11 @@ function iniciar(){
     alert('Inicio de sesión exitoso. ¡Bienvenido!');
     modal.classList.remove('modal--show');
     console.log(true);
-    nav.children[0].textContent = 'Rutas';
-    nav.children[1].textContent = 'Motoposadas';
-    nav.children[2].textContent = 'Presupuesto';
-    nav.children[3].textContent = '';
+ 
     // nav2.children[0].textContent = 'Motero';
     // nav2.children[1].textContent = 'Motoposada';
     // nav2.children[2].textContent = 'Invitado';
-    nav2.children[3].textContent = 'Cerrar Sesion';
+    // nav2.children[3].textContent = 'Cerrar Sesion';
   
 
     // motero.addEventListener('click', motero1)
@@ -146,12 +147,13 @@ function iniciar(){
 // function motero1(){
   document.querySelector('.content h3').textContent = rol1;
   document.querySelector('.presupuesto h1').textContent= 'Conoce El Presupuesto De Tu Viaje';
-  document.querySelector('.detalles h1').textContent= 'Motoposadas en tu ruta';
+  document.querySelector('.detalles h1').textContent= 'Rutas Mas Realizadas';
   nav.children[0].textContent = 'Rutas';
   nav.children[1].textContent = 'Motoposadas';
   nav.children[2].textContent = 'Presupuesto';
   nav.children[3].textContent = '';
   nav.children[4].textContent = '';
+  nav.children[5].textContent = 'Cerrar Sesion';
   // nav2.children[0].textContent = 'Motero';
   // nav2.children[1].textContent = 'Motoposada';
   // nav2.children[2].textContent = 'Invitado';
@@ -159,7 +161,17 @@ function iniciar(){
 
 
   imagen2.style.backgroundImage = "url(../img/icon-1.jpg)";
-  imagen.children[0].children[0].src = '../img/icon-5.jpg';
+  imagen.children[0].children[0].src = '../img/posada-1-1.jpg';
+  imagen3.style.backgroundImage = "url(../img/posada-1.jpg)";
+  rutas.children[1].children[0].children[0].src = '../img/ruta-1.jpg';
+  rutas.children[1].children[0].children[1].textContent = 'Ruta a Bogotá';
+  rutas.children[1].children[0].children[2].textContent = 'En Esta Ruta Encontraras Muchas Zonas Montañosas';
+  rutas.children[1].children[1].children[0].src = '../img/ruta-2.jpg';
+  rutas.children[1].children[1].children[1].textContent = 'Ruta a Medellín';
+  rutas.children[1].children[1].children[2].textContent = 'En Esta Ruta Se Podran Ver Pueblitos Muy Bonitos';
+  rutas.children[1].children[2].children[0].src = '../img/ruta-3.jpg';
+  rutas.children[1].children[2].children[1].textContent = 'Ruta a Popayán';
+  rutas.children[1].children[2].children[2].textContent = 'En Esta Ruta Podras Ver Paisajes Muy Bonitos Y Atardeceres';
 // }
 
 // motposada.addEventListener('click', motero2)
@@ -207,34 +219,43 @@ function iniciar(){
     alert('Inicio de sesión exitoso. ¡Bienvenido!');
     modal.classList.remove('modal--show');
     console.log(true);
-    nav.children[0].textContent = 'Rutas';
-    nav.children[1].textContent = 'Motoposadas';
-    nav.children[2].textContent = 'Presupuesto';
-    nav.children[3].textContent = '';
-    // nav2.children[0].textContent = 'Motero';
-    // nav2.children[1].textContent = 'Motoposada';
-    // nav2.children[2].textContent = 'Invitado';
-    nav2.children[3].textContent = 'Cerrar Sesion';
 
     // motposada.addEventListener('click', motero2)
 
 // function motero2(){
   document.querySelector('.content h3').textContent = rol2;
   document.querySelector('.content p').textContent = 'En este apartado podrar Registrar tus Motoposadas'
-  document.querySelector('.detalles h1').textContent= 'Rutas Donde Hay Motoposadas';
-  document.querySelector('.presupuesto h1').textContent= 'Presupuesto Para Una Motoposada';
-  imagen.children[0].children[0].src = '../img/mpsada-1.jpg';
-  nav.children[0].textContent = 'Rutas';
-  nav.children[1].textContent = 'Ubicación';
+  document.querySelector('.detalles h1').textContent= 'Motoposadas Mas Populares';
+  document.querySelector('.presupuesto h1').textContent= 'Presupuesto De Tu Motoposada';
+  imagen.children[0].children[0].src = '../img/posada-2.jpg';
+  nav.children[0].textContent = 'Reseñas';
+  nav.children[1].textContent = 'Sobre Mi';
   nav.children[2].textContent = 'Presupuesto';
   nav.children[3].textContent = '';
   nav.children[4].textContent = '';
-  motoada.children[1].children[1].children[0].textContent = 'Conoce la Ubicacion de Las Mejores Motoposadas'
+  nav.children[5].textContent = 'Cerrar Sesion';
+  motoada.children[0].textContent = 'MI MOTOPOSADA';
+  motoada.children[1].children[1].children[0].textContent = 'Sobre Mi Motoposada';
+  rutas.children[1].children[0].children[0].src = '../img/ruta-5.jpg';
+  rutas.children[1].children[0].children[1].textContent = 'Motoposada En Cartagena';
+  rutas.children[1].children[0].children[2].textContent = 'Esta Motoposada LLeva 20 Años Al Servicio De Los Motoviajeros';
+  rutas.children[1].children[1].children[0].src = '../img/ruta-4.jpg';
+  rutas.children[1].children[1].children[1].textContent = 'Motoposada En Santander';
+  rutas.children[1].children[1].children[2].textContent = 'Esta Motoposada LLeva 5 Años Al Servicio De Los Motoviajeros';
+  rutas.children[1].children[2].children[0].src = '../img/ruta-6.jpg';
+  rutas.children[1].children[2].children[1].textContent = 'Motoposada En Pasto';
+  rutas.children[1].children[2].children[2].textContent = 'Esta Motoposada LLeva 10 Años Al Servicio De Los Motoviajeros';
+  
+  presupto.children[1].children[0].children[0].textContent = 'Alimentacion';
+  presupto.children[1].children[1].children[0].textContent = 'Mantenimiento';
+  presupto.children[1].children[2].children[0].textContent = 'Servicios';
+
   // nav2.children[0].textContent = 'Motero';
   // nav2.children[1].textContent = 'Motoposada';
   // nav2.children[2].textContent = 'Invitado';
-  nav2.children[3].textContent = 'Cerrar Sesion';
-  imagen2.style.backgroundImage = "url(../img/icon-2.jpg)";
+  // nav2.children[3].textContent = 'Cerrar Sesion';
+  imagen2.style.backgroundImage = "url(../img/icon-8.jpg)";
+  imagen3.style.backgroundImage = "url(../img/mpsada-1.jpg)";
 // }
   
  }
@@ -244,31 +265,59 @@ function iniciar(){
   alert('Inicio de sesión exitoso. ¡Bienvenido!');
   modal.classList.remove('modal--show');
   console.log(true);
-  nav.children[0].textContent = 'Rutas';
-  nav.children[1].textContent = 'Motoposadas';
-  nav.children[2].textContent = 'Presupuesto';
-  nav.children[3].textContent = '';
   // nav2.children[0].textContent = 'Motero';
   // nav2.children[1].textContent = 'Motoposada';
   // nav2.children[2].textContent = 'Invitado';
-  nav2.children[3].textContent = 'Cerrar Sesion';
+  // nav2.children[3].textContent = 'Cerrar Sesion';
 
   // invitado.addEventListener('click', motero4)
 
   // function motero4(){
     document.querySelector('.content h3').textContent = rol3;
-    nav.children[0].textContent = 'Rutas';
-    nav.children[1].textContent = 'Motoposada';
-    nav.children[2].textContent = 'Presupuesto';
+    document.querySelector('.detalles h1').textContent= 'Nuevas Solicitudes';
+    document.querySelector('.presupuesto h1').textContent= 'Estadisticas';
+    nav.children[0].textContent = 'Solicitudes';
+    nav.children[1].textContent = 'Eventos';
+    nav.children[2].textContent = 'Estadisticas';
     nav.children[3].textContent = '';
     nav.children[4].textContent = '';
-    motoada.children[1].children[1].children[0].textContent = 'Revisa Las Solicitudes de Estas Motoposadas'
+    nav.children[5].textContent = 'Cerrar Sesion';
+    motoada.children[1].children[1].children[0].textContent = 'Revisa Las Solicitudes de Estas Motoposadas';
+    document.querySelector('.content p').textContent = 'Aqui estan las Nuevas PQRS De los Usuarios';
+    motoada.children[0].textContent = 'NUEVOS EVENTOS';
+    motoada.children[1].children[1].children[0].textContent = 'Sobre Este Evento';
+    rutas.children[1].children[0].children[0].src = '../img/icon-9.jpg';
+    rutas.children[1].children[0].children[1].textContent = 'Motoposada';
+    rutas.children[1].children[0].children[2].textContent = 'Solicitud Para Una Nueva Motoposada';
+    rutas.children[1].children[1].children[0].src = '../img/icon-10.jpg';
+    rutas.children[1].children[1].children[1].textContent = 'Motoviajero';
+    rutas.children[1].children[1].children[2].textContent = 'Solicitud De Cambio De Documentos';
+    rutas.children[1].children[2].children[0].src = '../img/icon-11.jpg';
+    rutas.children[1].children[2].children[1].textContent = 'Reclamo';
+    rutas.children[1].children[2].children[2].textContent = 'Solicitud De PQRS';
+    presupto.children[1].children[0].children[0].textContent = 'Moteros Nuevos';
+    presupto.children[1].children[0].children[1].textContent = '60%';
+    presupto.children[1].children[0].children[2].children[2].textContent = '';
+    presupto.children[1].children[0].children[2].children[3].textContent = '';
+    presupto.children[1].children[0].children[3].textContent = 'Ver Mas';
+    presupto.children[1].children[1].children[0].textContent = 'Motoposadas Nuevas';
+    presupto.children[1].children[1].children[1].textContent = '30%';
+    presupto.children[1].children[1].children[2].children[2].textContent = '';
+    presupto.children[1].children[1].children[2].children[3].textContent = '';
+    presupto.children[1].children[1].children[3].textContent = 'Ver Mas';
+    presupto.children[1].children[2].children[0].textContent = 'Eventos Realizados';
+    presupto.children[1].children[2].children[1].textContent = '10%';
+    presupto.children[1].children[2].children[2].children[2].textContent = '';
+    presupto.children[1].children[2].children[2].children[3].textContent = '';
+    presupto.children[1].children[2].children[3].textContent = 'Ver Mas';
+  
     // nav2.children[0].textContent = 'Motero';
     // nav2.children[1].textContent = 'Motoposada';
     // nav2.children[2].textContent = 'Invitado';
-    nav2.children[3].textContent = 'Cerrar Sesion';
-    imagen.children[0].children[0].src = '../img/img-fondo2.jpg';
-    imagen2.style.backgroundImage = "url(../img/icon-4.jpg)";
+    // nav2.children[3].textContent = 'Cerrar Sesion';
+    imagen.children[0].children[0].src = '../img/posada-3-3.jpg';
+    imagen2.style.backgroundImage = "url(../img/icon-6.jpg)";
+    imagen3.style.backgroundImage = "url(../img/posada-3.jpg)";
   // }
   
 
